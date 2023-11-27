@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://images.saymedia-content.com/.image/t_share/MTc0OTg4MTQ5MzE4MDM1NDI0/travel-company-names.jpg');
+    background-size: cover;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 100vh; 
+}
+
+.navigation {
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    width: 100%; 
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-right: 10px; 
+}
+
+.navigation a:hover {
+    background-color: #333;
+    cursor: pointer; 
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    width: 80%; 
+    margin: 20px 20px 20px 10%; 
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.result {
+    display: none;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.custom-label {
+    display: block;
+    color: #888; 
+    font-style: italic; 
+    margin-bottom: 5px;
+}
+#travelForm ::placeholder{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#travelForm{
+    opacity: 0;
+    animation: leftSide 1s ease forwards;
+    animation-delay: .1s;
+    transition: 1ms;
+}
+select option{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+@keyframes leftSide {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    
+}
+
+option {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.label-text {
+    color: black; 
+}
+
+ .label-link {
+        color: black;
+        text-decoration: underline;
+        cursor: pointer;
+        display: inline; 
+        margin-right: 0px; 
+    }
+
+    .checkbox-container {
+        font-size: small;
+        display: flex;
+        align-items: center;
+    }

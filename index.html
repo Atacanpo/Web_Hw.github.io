@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Form.css">
+    <title>Education Form</title>
+</head>
+<body>
+    <script src="Form.js"></script>
+    <div class="navigation">
+        <a href="https://www.yasar.edu.tr/">Home</a>
+        <a href="https://www.yasar.edu.tr/">Categories</a>
+        <a href="https://www.yasar.edu.tr/">About</a>
+        <a href="https://www.yasar.edu.tr/">Contact</a>
+    </div>
+<form id="travelForm">
+    <h4>EDUCATION APPOINTMENT FORM</h4>
+    <label class="custom-label" for="name" > </label>
+    <input type="text" id="title" name="titlee" placeholder="Title" required>
+
+    <label class="custom-label" for="name"></label>
+    <input type="text" id="name" name="namee" placeholder="Your Name" required>
+    
+    <label class="custom-label" for="email"></label>
+    <input type="email" id="email" name="emaill" placeholder="Email" required>
+
+    <label class="custom-label" for="phone"></label>
+    <input type="tel" id="phone" name="phonee" pattern="\d{10}" placeholder="Phone Number" required>
+
+    <div class="form-item">
+        <select name="course" id="courses" required>
+            <option value="" selected disabled>Course Type</option>
+        </select>
+    </div>
+    
+    <div class="form-item">
+        <select name="city" id="cities" required>
+            <option value="" selected disabled>City</option>
+        </select>
+    </div>
+
+    <h5>How would you like to be located ?</h5>
+    
+<select id="byPhone" name="byPhonee" required>
+    <option value="phoneOption1">By Phone</option>
+    <option value="phoneOption2">By Email</option>
+    <option value="phoneOption3">Option 3</option>
+    <option value="phoneOption4">Option 4</option>
+
+</select>
+
+<select id="hours" name="hourss" required>
+    <option value="hoursOption1">Hours 8am 10pm</option>
+    <option value="hoursOption2">Hours Option 2</option>
+    <option value="hoursOption3">Hours Option 3</option>
+    <option value="hoursOption4">Hours Option 4</option>
+
+</select>
+    
+<div class="checkbox-container">
+
+    <p style="font-size: small;">I agree to the <span class="label-link" onclick="redirectToTerms()" style="display: inline;">Terms and Conditions</span></p>
+    <input type="checkbox" id="terms" name="termss" required>
+  
+</div>
+    
+<button type="button" onclick="submitForm()" style="background-color: rgb(51, 51, 155); color: white;">Request an appointment</button>
+
+    
+</form>
+
+<div id="result" class="resultt"></div>
+
+<script src="Form.js"></script>
